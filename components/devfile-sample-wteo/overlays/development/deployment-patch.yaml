@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-wteo
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/ci1t-830-0014-tenant/ci1t-830-0014-app/devfile-sample-wteo@sha256:32403a4cb84608c3039d482e0a3a5cff87b479633c3a753f05694afd24fdf63f
+        name: my-nodejs
+        resources: {}
+status: {}
